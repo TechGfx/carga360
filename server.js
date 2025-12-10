@@ -12,10 +12,11 @@ app.use(express.json());
 // MySQL Connection Configuration
 // NOTA: Asegúrate de configurar estas variables con tus credenciales reales
 const db = mysql.createPool({
-  host: '127.0.0.1',
-  user: 'root',
-  password: '',   // SIN contraseña
-  database: 'carga360',
+  host: 'mysql.us.stackcp.com',
+  port: 41006,
+  user: 'carga360-35303938a14f',
+  password: 'F%WN%@W/o|ks',   // SIN contraseña
+  database: 'carga360-35303938a14f',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
