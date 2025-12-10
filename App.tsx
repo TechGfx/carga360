@@ -34,7 +34,7 @@ function App() {
 
     try {
       // Assuming backend runs on port 3001
-      const response = await fetch('/api/demo-requests', {
+      const response = await fetch('/api/demo-requests.js', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
