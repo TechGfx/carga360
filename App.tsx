@@ -34,13 +34,11 @@ function App() {
 
     try {
       // Assuming backend runs on port 3001
-      const response = await fetch('/api/demo-requests.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+const response = await fetch('/api/demo-requests', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data),
+});
 
       if (response.ok) {
         closeModal();
