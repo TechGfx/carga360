@@ -34,11 +34,11 @@ function App() {
 
     try {
       // Assuming backend runs on port 3001
-const response = await fetch('/api/demo-requests', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(data),
-});
+      const response = await fetch('/api/demo-requests', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
 
       if (response.ok) {
         closeModal();
@@ -58,15 +58,15 @@ const response = await fetch('/api/demo-requests', {
 
   return (
     <div className="min-h-screen flex flex-col font-sans">
-      <Notification 
-        isVisible={showNotification} 
+      <Notification
+        isVisible={showNotification}
         message="Hemos recibido tu información y guardado tu solicitud en nuestra base de datos."
         onClose={() => setShowNotification(false)}
       />
-      
-      <DemoModal 
-        isOpen={isModalOpen} 
-        onClose={closeModal} 
+
+      <DemoModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
         onSubmit={handleFormSubmit}
         isSubmitting={isSubmitting}
       />

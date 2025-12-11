@@ -151,7 +151,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: "¿Puedo usarlo desde el celular?",
-    answer: "Sí, Carga360 es una plataforma 100% web y responsiva. Funciona perfectamente en computadoras, tablets y smartphones sin necesidad de instalar servidores físicos."
+    answer: "Sí, Carga360 es una plataforma 100% web y responsiva. Además de eso, el conductor en cuestión puede avisar de estados o más información por una app."
   },
   {
     question: "¿Cumple con la normativa SARLAFT?",
@@ -169,6 +169,7 @@ export const FAQS: FaqItem[] = [
 
 export const COMPARISON_ITEMS = [
   { feature: "Información Centralizada", old: false, new: true },
+  { feature: "Gestión de Documentos en Vehículos", old: false, new: true },
   { feature: "Alertas Automáticas", old: false, new: true },
   { feature: "Acceso Móvil", old: false, new: true },
   { feature: "Validación de Riesgos", old: false, new: true },
